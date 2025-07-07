@@ -1,5 +1,5 @@
 ## IWU - Gradtagzahlen Deutschland - Shiny App
-Version: 11.10.2024
+Version: 07.07.2024
 
 ## Erläuterungen 
 

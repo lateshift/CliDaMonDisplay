@@ -193,12 +193,18 @@ GetMetaInfo_Data_TA_HD <- function (
       Month = substr (myColNames, start = 8, stop = 9),
       MeanCompleteness = MeanCompleteness 
     )
+
   
   i_Col_DataAvailable_Min <- 
     min (DF_MonthMetaInfo_TA_HD$i_Month [DF_MonthMetaInfo_TA_HD$MeanCompleteness > 0.5])
   
   i_Col_DataAvailable_Max <- 
-    max (DF_MonthMetaInfo_TA_HD$i_Month [DF_MonthMetaInfo_TA_HD$MeanCompleteness > 0.5])
+    max (DF_MonthMetaInfo_TA_HD$i_Month [DF_MonthMetaInfo_TA_HD$MeanCompleteness > 0.8])
+  
+  ## 2025-07-07 changed (completeness for 24th June 2025 was 0.73, the criterion is not strict enough)
+  # 
+  # i_Col_DataAvailable_Max <- 
+  #   max (DF_MonthMetaInfo_TA_HD$i_Month [DF_MonthMetaInfo_TA_HD$MeanCompleteness > 0.5])
   
   DF_MetaInfo_TA_HD <- 
     data.frame(
@@ -477,7 +483,7 @@ ui <- shinydashboard::dashboardPage (
         markdown (
           
 "## IWU - Gradtagzahlen Deutschland - Shiny App
-App-Version: 11.10.2024
+App-Version: 07.07.2025
 
 ## Erläuterungen 
 

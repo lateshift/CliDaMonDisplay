@@ -194,18 +194,18 @@
     },
     "clidamonger": {
       "Package": "clidamonger",
-      "Version": "1.3.0",
+      "Version": "1.4.0",
       "Source": "GitHub",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteRepo": "clidamonger",
       "RemoteUsername": "IWUGERMANY",
-      "RemoteRef": "HEAD",
-      "RemoteSha": "e0fc74d39cd5be273b8bb8efbb87abf6d053e0c0",
+      "RemoteRepo": "clidamonger",
+      "RemoteRef": "main",
+      "RemoteSha": "0bf772d4c305ef167030eda8e85167dfd020c932",
       "Requirements": [
         "R"
       ],
-      "Hash": "d1b47998e665d9725902ac7403cad2b6"
+      "Hash": "796aa9115c1a77af8d3e052586e2fbf0"
     },
     "colorspace": {
       "Package": "colorspace",
